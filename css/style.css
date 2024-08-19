@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* GLOBAL STYLES */
-* {
-  font-family: "Nunito", Helvetica, sans-serif;
-}
-
+/* GLOBAL */
 :root {
   --blue-500: #364692;
   --blue-900: #171d3d;
@@ -12,15 +8,38 @@
   --lightgray: hsl(0, 0%, 98%);
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", Helvetica, sans-serif;
+  color: var(--blue-500);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 95dvh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+}
+
 /* HEADER */
+header {
+  width: 85dvw;
+  margin: auto;
+}
+
 .branding {
   display: flex;
   align-items: center;
-  margin-left: -20px;
 }
 
-h2 {
-  white-space: pre;
+.branding h2 {
   color: var(--yellow-500);
   font-weight: 700;
   font-size: 1.875rem;
@@ -40,3 +59,71 @@ h2>.smaller {
 }
 
 /* MAIN */
+main {
+  flex: 1;
+  height: 75dvh;
+  padding: 100px 24px;
+  margin: auto;
+
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+/* MAIN - LEFT SIDE */
+.text-container {
+  max-width: 30dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  text-wrap: pretty;
+}
+
+hgroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  color: black;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: var(--blue-900);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+
+  /* normalising */
+  font-family: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+/* MAIN - RIGHT SIDE */
+main>figure {
+  justify-self: end;
+}
+
+main img {
+  height: 85%;
+}
