@@ -111,12 +111,26 @@ button {
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.2rem;
+  display: block;
+  transition: background-color 0.1s;
 
   /* normalising */
   font-family: inherit;
   outline: none;
   border: none;
   cursor: pointer;
+
+  /* colour variables */
+  --hover-colour: #364692;
+  --click-colour: #263268;
+}
+
+button:hover {
+  background-color: var(--hover-colour);
+}
+
+button:active {
+  background-color: var(--click-colour);
 }
 
 /* MAIN - RIGHT SIDE */
