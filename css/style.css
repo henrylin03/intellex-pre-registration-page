@@ -30,7 +30,7 @@ h3 {
 
 /* HEADER */
 header {
-  width: 85dvw;
+  width: 70dvw;
   margin: auto;
 }
 
@@ -62,19 +62,19 @@ h2>.smaller {
 main {
   flex: 1;
   height: 75dvh;
+  width: 70dvw;
   padding: 100px 24px;
   margin: auto;
 
   /* grid */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 48px;
   align-items: start;
 }
 
 /* MAIN - LEFT SIDE */
 .text-container {
-  max-width: 30dvw;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -86,7 +86,7 @@ hgroup {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
 }
 
 h3 {
@@ -100,7 +100,7 @@ h1 {
 
 p {
   color: black;
-  line-height: 1.5;
+  line-height: 1.75;
   font-size: 1.2rem;
 }
 
@@ -110,13 +110,13 @@ button {
   padding: 16px 32px;
   border-radius: 8px;
   font-weight: bold;
+  font-size: 1.2rem;
 
   /* normalising */
   font-family: inherit;
   outline: none;
   border: none;
   cursor: pointer;
-  font-size: inherit;
 }
 
 /* MAIN - RIGHT SIDE */
