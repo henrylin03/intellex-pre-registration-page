@@ -15,10 +15,10 @@
 }
 
 body {
-  height: 95dvh;
+  height: 100dvh;
   width: clamp(70dvw, 700px, 100%);
   margin: 0 auto;
-  padding: 12px 48px;
+  padding: 12px 36px;
 }
 
 h1,
@@ -69,7 +69,7 @@ main {
 
   /* grid */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 24px;
   align-items: start;
 }
@@ -88,6 +88,7 @@ hgroup {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 12px;
 }
 
 h3 {
