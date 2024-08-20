@@ -162,3 +162,8 @@ dialog {
   height: 100%;
   border: none;
 }
+
+::backdrop {
+  background-color: #989fad;
+  opacity: .5;
+}
