@@ -136,11 +136,11 @@ button:active {
 
 /* MAIN - RIGHT SIDE */
 main>figure {
-  justify-self: end;
+  justify-self: center;
 }
 
 main img {
-  height: 85%;
+  max-width: 100%;
 }
 
 /* DIALOG */
