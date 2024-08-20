@@ -1,6 +1,9 @@
 const dialog = document.querySelector("dialog");
 const joinButton = document.querySelector("button");
 
-joinButton.addEventListener("mousedown", () => {
-  dialog.showModal();
-});
+const closeDialog = (e) => {
+  if (e.target === dialog) dialog.close();
+};
+
+joinButton.addEventListener("mousedown", () => dialog.showModal());
+dialog.addEventListener("mousedown", closeDialog);
