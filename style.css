@@ -15,9 +15,10 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 95dvh;
+  width: clamp(70dvw, 700px, 100%);
+  margin: 0 auto;
+  padding: 12px 48px;
 }
 
 h1,
@@ -34,8 +35,7 @@ a {
 
 /* HEADER */
 header {
-  width: 70dvw;
-  margin: auto;
+  margin-left: -2.5rem;
 }
 
 .branding {
@@ -64,16 +64,13 @@ h2>.smaller {
 
 /* MAIN */
 main {
-  flex: 1;
-  height: 75dvh;
-  width: 70dvw;
-  padding: 100px 24px;
-  margin: auto;
+  padding: 80px 0;
+  width: 100%;
 
   /* grid */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 24px;
   align-items: start;
 }
 
