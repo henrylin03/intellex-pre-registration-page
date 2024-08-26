@@ -106,25 +106,41 @@ p {
   font-size: 1.2rem;
 }
 
-button {
-  background-color: var(--blue-900);
-  color: white;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  display: block;
-  transition: background-color 0.1s;
+/* buttons */
+.button-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
 
+button {
   /* normalising */
   font-family: inherit;
   outline: none;
   border: none;
   cursor: pointer;
 
-  /* colour variables */
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  transition: background-color 0.1s;
+}
+
+button.primary {
+  background-color: var(--blue-900);
+  color: white;
   --hover-colour: #364692;
   --click-colour: #263268;
+}
+
+button.secondary {
+  background-color: white;
+  border: 1px var(--blue-500) solid;
+  border-radius: 12px;
+  --hover-colour: #ebedf4;
+  --click-colour: #C1C6DD;
 }
 
 button:hover {
