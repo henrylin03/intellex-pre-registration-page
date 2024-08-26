@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalise.css">
   <link rel="stylesheet" href="style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -29,25 +30,46 @@
   </header>
 
   <main>
-    <div class="text-container">
-      <hgroup>
-        <h3>Ready to level up your career?</h3>
-        <h1>Match with a mentor who gets you</h1>
-      </hgroup>
-      <p>Join our waitlist and be the first to access one on one mentoring, interview preparation, and more from
-        industry experts!</p>
-      <div class="button-group">
-        <button type="button" class="primary" id="join-waitlist">Join Waitlist</button>
-        <button type="button" class="secondary" id="email">Email Us</button>
+    <div class="grid">
+      <div class="text-container">
+        <hgroup>
+          <h3>Ready to level up your career?</h3>
+          <h1>Match with a mentor who gets you</h1>
+        </hgroup>
+        <p>Join our waitlist and be the first to access one on one mentoring, interview preparation, and more from
+          industry experts!</p>
+        <div class="button-group">
+          <button type="button" class="primary" id="join-waitlist">Join Waitlist</button>
+          <button type="button" class="secondary" id="email">Email Us</button>
+        </div>
       </div>
-
+      <figure>
+        <img src="./assets/hero.png"
+          alt="Mentees smiling because they've found the mentor that matches the skillsets they are trying to develop">
+      </figure>
     </div>
-
-    <figure>
-      <img src="./assets/hero.png"
-        alt="Mentees smiling because they've found the mentor that matches the skillsets they are trying to develop">
-    </figure>
   </main>
+
+  <footer>
+    <small class="copyright">© 2024 Intellex Academy | ABN 55 668 589 900. All Rights Reserved.</small>
+    <div class="links">
+      <ul>
+        <li>
+          <a href="./assets/policies/Intellex Privacy Policy May 2024.pdf" target="_blank">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="./assets/policies/Intellex_Website_Terms_and_Conditions_May 2024.pdf" target="_blank">Terms &
+            Conditions</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/intellexgroup/" target="_blank">
+            <img src="./assets/linkedin.svg"
+              alt="LinkedIn icon which will take you to Intellex Academy's LinkedIn page" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <dialog>
     <iframe id="google-forms"
