@@ -29,10 +29,6 @@ body {
   grid-template-rows: 1fr 10fr 1fr;
 }
 
-body>* {
-  width: 100dvw;
-}
-
 h1,
 h2,
 h3 {
@@ -253,9 +249,9 @@ dialog {
     gap: 24px;
   }
 
-.text-container {
-  gap: 20px;
-}
+  .text-container {
+    gap: 20px;
+  }
 
   main figure {
     order: -1;
@@ -294,10 +290,11 @@ dialog {
 
   /* main section */
   main {
-    padding: 12px;
+    padding: 20px;
   }
 
   main>.grid {
+    width: 95%;
     gap: 0;
   }
 
