@@ -1,0 +1,71 @@
+/* MAIN SECTION */
+main {
+  text-wrap: pretty;
+  max-width: 50rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+main h1,
+main h2 {
+  margin-top: 1rem;
+  color: var(--blue-500);
+}
+
+main h1 {
+  line-height: 2.5rem;
+}
+
+main h2 {
+  line-height: 2rem;
+}
+
+main p {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+main p,
+main ul {
+  line-height: 1.8rem;
+}
+
+main ul {
+  margin: 0 2rem .5rem 2rem;
+}
+
+main li {
+  margin-bottom: .5rem;
+}
+
+main br {
+  display: block;
+  content: "A";
+  margin-bottom: 1rem;
+}
+
+main a {
+  text-decoration: underline;
+  color: revert;
+}
+
+main a:hover {
+  text-decoration: none;
+  filter: brightness(1.1);
+}
+
+.effective-date {
+  font-style: italic;
+  font-weight: 600;
+  margin: .5rem 0;
+}
+
+/* SPECIAL PADDING FOR FOOTER */
+footer {
+  padding: 24px 36px;
+
+  /* mobile */
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+}
