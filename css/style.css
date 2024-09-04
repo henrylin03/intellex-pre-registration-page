@@ -36,7 +36,6 @@ h3 {
 }
 
 a {
-  text-decoration: inherit;
   color: inherit;
 }
 
@@ -206,6 +205,10 @@ footer {
 .copyright {
   font-size: inherit;
   color: #737373;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .links>ul {
