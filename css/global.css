@@ -116,6 +116,17 @@ footer a:hover {
 /* MEDIA QUERIES */
 /* mobile */
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
 
   /* header section */
   header {
@@ -141,6 +152,11 @@ footer a:hover {
   /* main section */
   main {
     padding: 12px;
+  }
+
+  main p,
+  main ul {
+    font-size: .85rem;
   }
 
   /* footer */

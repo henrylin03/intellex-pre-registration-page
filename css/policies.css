@@ -63,12 +63,19 @@ main a:hover {
   font-weight: 600;
 }
 
-/* SPECIAL PADDING FOR FOOTER */
-footer {
-  padding: 24px 36px;
+/* MEDIA QUERIES */
+/* mobile */
+@media only screen and (max-width: 768px) {
+  main p {
+    line-height: 1.5rem;
+    margin: .75rem 0;
+  }
 
-  /* mobile */
-  @media (max-width: 768px) {
+  main ul {
+    line-height: 1.5rem;
+  }
+
+  footer {
     padding: 16px;
   }
 }
