@@ -7,8 +7,10 @@ main {
 }
 
 main h1,
-main h2 {
+main h2,
+main h3 {
   margin-top: 1rem;
+  margin-bottom: -.5rem;
   color: var(--blue-500);
 }
 
@@ -16,7 +18,8 @@ main h1 {
   line-height: 2.5rem;
 }
 
-main h2 {
+main h2,
+main h3 {
   line-height: 2rem;
 }
 
@@ -44,7 +47,8 @@ main br {
   margin-bottom: 1rem;
 }
 
-main a {
+main a,
+main a:visited {
   text-decoration: underline;
   color: revert;
 }
@@ -57,7 +61,6 @@ main a:hover {
 .effective-date {
   font-style: italic;
   font-weight: 600;
-  margin: .5rem 0;
 }
 
 /* SPECIAL PADDING FOR FOOTER */
