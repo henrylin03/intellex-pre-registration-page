@@ -254,6 +254,10 @@ footer a:hover {
     padding: 20px 16px;
   }
 
+  footer [lang="zh"] {
+    font-size: .65rem;
+  }
+
   .copyright {
     max-width: 40vw;
   }
