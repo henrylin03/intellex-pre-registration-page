@@ -14,6 +14,12 @@ main h3 {
   color: var(--blue-500);
 }
 
+main[lang="zh"] h1,
+main[lang="zh"] h2,
+main[lang="zh"] h3 {
+  margin-top: 2.5rem;
+}
+
 main h1 {
   line-height: 2.5rem;
 }
