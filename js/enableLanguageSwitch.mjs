@@ -1,23 +1,8 @@
-const dialog = document.querySelector("dialog");
-const joinButton = document.querySelector("#join-waitlist");
-const emailButton = document.querySelector("#email");
 const switchLanguageButtons = document.querySelectorAll(
   ".switch-language-button"
 );
 
-// event handlers
-const closeDialog = (e) => {
-  if (e.target === dialog) dialog.close();
-};
-
-const sendEmail = () => {
-  const EMAIL_ADDRESS = "admin@intellex.academy";
-  const emailLink = `mailto:${EMAIL_ADDRESS}?subject=Pre-registration Enquiry`;
-
-  window.location.href = emailLink;
-};
-
-const switchLanguage = (e) => {
+const handleLanguageSwitch = (e) => {
   const selectedLanguage = e.target.dataset.language;
   const variableLanguageElements = {
     english: document.querySelectorAll("body [lang='en']"),
@@ -41,10 +26,9 @@ const switchLanguage = (e) => {
   }
 };
 
-// event listeners
-switchLanguageButtons.forEach((button) =>
-  button.addEventListener("click", switchLanguage)
-);
-joinButton.addEventListener("click", () => dialog.showModal());
-dialog.addEventListener("click", closeDialog);
-emailButton.addEventListener("click", sendEmail);
+const enableLanguageSwitch = () =>
+  switchLanguageButtons.forEach((button) =>
+    button.addEventListener("click", handleLanguageSwitch)
+  );
+
+export default enableLanguageSwitch;
